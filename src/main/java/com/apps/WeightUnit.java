@@ -11,6 +11,7 @@ public enum WeightUnit {
     private final double conversionFactor;
 
     WeightUnit(double conversionFactor) {
+    	
         this.conversionFactor = conversionFactor;
     }
 

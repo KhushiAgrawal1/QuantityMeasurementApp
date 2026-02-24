@@ -10,6 +10,7 @@ public enum LengthUnit {
     private final double conversionFactor;
 
     LengthUnit(double conversionFactor) {
+    	
         this.conversionFactor = conversionFactor;
     }
 
