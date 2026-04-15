@@ -3,7 +3,7 @@
 ## Project Overview
 
 The **Quantity Measurement App** is a Test-Driven Development (TDD)-based project designed to demonstrate how to build scalable and maintainable software by starting simple and progressively adding complexity through Use Cases (UCs).  
-The application focuses on converting and comparing measurements across different quantities (length, weight, volume, temperature, etc.) while following clean design principles and incremental development. 
+The application focuses on converting and comparing measurements across different quantities (length, weight, volume, temperature, etc.) while following clean design principles and incremental development.
 
 ---
 
@@ -25,8 +25,8 @@ This approach ensures:
 
 We followed a professional branching strategy:
 
-- `main` → stable production code  
-- `dev` → integration branch  
+- `main` → stable production code
+- `dev` → integration branch
 - `feature/UCx-*` → individual feature branches
 
 Each UC is:
