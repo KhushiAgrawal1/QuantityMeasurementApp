@@ -43,7 +43,7 @@ public class Quantity<U extends IMeasurable> {
 			if (b == 0.0)
 				throw new ArithmeticException("Cannot divide by zero");
 			return a / b;
-		});
+		}), MULTIPLY((a,b)-> a*b);
 
 		private final DoubleBinaryOperator operation;
 
@@ -182,4 +182,14 @@ public class Quantity<U extends IMeasurable> {
 	public String toString() {
 		return value + " " + unit.getUnitName();
 	}
+
+	public double multiply(Quantity<U> other) {
+	    // 1. Validate that 'other' is not null and is a compatible unit type
+	    validateArithmeticOperands(other, null, false);
+
+	    // 2. Perform the multiplication using your existing base arithmetic logic
+	    return performBaseArithmetic(other, this.unit, ArithmeticOperation.MULTIPLY);
+	}
+
+	
 }
